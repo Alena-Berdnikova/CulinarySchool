@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary School Sign Up</title>
+  <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section"></div>
+    <div class="form-section">
+      <h1>Join Our Online Culinary School Today!</h1>
+      <form id="signupForm" action="./home.html">
+        <div class="input-control">
+          <input type="text" id="name" name="name" placeholder="Full Name">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <input type="text" id="email" name="email" placeholder="Email Address">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <input type="tel" id="tel" name="tel" placeholder="Phone number">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <input type="password" id="password" name="password" placeholder="Password">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <select id="classes" name="classes">
+            <option value="" disabled selected>What classes do you want to join?</option>
+            <option value="Culinary">Culinary</option>
+            <option value="Pastry">Pastry</option>
+          </select>
+          <div class="error"></div>
+        </div>
+        <fieldset class="contact-method">
+          <legend>Preferred Contact Method</legend>
+          <label>
+            <input type="radio" name="contact" value="email" checked> Email
+          </label>
+          <label>
+            <input type="radio" name="contact" value="phone"> Phone
+          </label>
+        </fieldset>
+        <label>
+          <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions
+        </label>
+        <button type="submit" class="submit-btn" id="signup-btn">Register</button>
+      </form>
+    </div>
+    <div class="right-section"></div>
+  </div>
+  <script src="../js/registration-validation.js"></script>
+</body>
+</html>
